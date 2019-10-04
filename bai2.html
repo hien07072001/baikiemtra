@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+<script>
+    let a = Number(prompt(" nhap a"));
+    let b = a + '';
+    function isPrime() {
+        if (a<=1)
+            return false;
+        else {
+            for ( let i = 2; i <= Math.sqrt(a); i++){
+                if ( a%i===0)
+                    return false;
+            }
+            return true;
+        }
+    }
+
+    if (isPrime())
+        b=b+ "la so nguyen to";
+    else b=b+ "ko la s0 nguyen to";
+
+    document.write(b);
+
+</script>
+
+</body>
+</html>
